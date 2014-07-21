@@ -1,7 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## I opted for a more object oriented approach:
+## Only one function, which return an R object that
+## contains both the original matrix and the cached inverse matrix.
 
-## Write a short comment describing this function
+## Usage:
+## m <- cmatrix(matrix(1:4, 2, 2))
+## get original matrix: m$get() 
+## get inverse matrix: m$solve()
+## get inverse matrix (cached): m$solve()
 
 cmatrix <- function(m = matrix()) {
   # inverse matrix
